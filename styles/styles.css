@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+/* Navigation layout
+https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Split_Navigation
+*/
+header {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+nav a {
+    display: block;
+    padding: 0.25em .75em;
+    font-size: 2.25rem;
+}
+nav .push-left {
+    margin-right: auto;
+}
+
+/* #link-home {
+    font-size: 2.5rem;
+} */
+
+/* Navigation link styling
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links
+*/
+nav a:link {
+    text-decoration: none;
+    color: black;
+}
+nav a:visited {
+    color: black;
+}
+
+/* Responsiveness - hamburger menu when the screen gets too small
+
+transition width for hamburger icon: 1100px
+transition width for dropping the "// <bulgarian>": 600px
+
+https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+https://codepen.io/erikterwan/pres/EVzeRP
+*/
+
+nav li:last-of-type {
+    padding: 0.25em .75em;
+}
+nav span.diy-hamburger-icon-bar {
+    /* from  https://codepen.io/erikterwan/pres/EVzeRP */
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: black;
+    border-radius: 3px;
+}
+
+/* Showing/hiding elements based on screen width!
+*/
+@media screen and (min-width: 1050px) {
+    nav li#diy-hamburger-icon {
+        display: none;
+    }
+}
+@media screen and (max-width: 1050px) {
+    nav li#diy-hamburger-icon {
+        display: block;
+    }
+    nav .menu-option {
+        display: none;
+    }
+}
+@media screen and (max-width: 750px) {
+    nav span#link-home-bulgarian-name {
+        display: none;
+    }
+}
