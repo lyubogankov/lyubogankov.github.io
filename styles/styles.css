@@ -10,14 +10,14 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Split_Navigatio
 header {
     margin: 0;
     padding: 0;
-    background-color: gray;
+    background-color: purple;
 }
 
-nav#topnav ul {
+#topnav ul {
     list-style: none;
     margin: 0 auto;
     padding: 0;
-    max-width: 1400px;
+    max-width: 1200px;
 
     display: flex;
     flex-direction: row;
@@ -25,7 +25,7 @@ nav#topnav ul {
     justify-content: right;
 }
 
-nav#topnav li {
+#topnav li {
     display: inline-block;
 }
 
@@ -33,11 +33,11 @@ li.push-right {
     margin-right: auto;
 }
 
-nav#topnav #flexible-links {
-    background-color: purple;
+#topnav #flexible-links {
+    background-color: gray;
 }
 
-nav#topnav a {
+#topnav a {
     padding: 0.25em .75em;
     font-size: 2.25rem;
 }
@@ -45,37 +45,31 @@ nav#topnav a {
 /* Navigation link styling
 https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links
 */
-nav#topnav a:link {
+#topnav a:link {
     text-decoration: none;
     color: black;
 }
-nav#topnav a:visited {
+#topnav a:visited {
     color: black;
 }
 
 /* Adjusting top bar based on screen width */
 @media screen and (max-width: 1050px) {
-    nav#topnav {
-        text-align: center;
+    #topnav ul {
+        justify-content: center;
     }
-    nav#topnav ul {
-        justify-content: left;
+    #topnav li.push-right {
+        margin: 0 auto;
     }
-    nav#topnav li#flexible-links ul:first-child {
-        padding-left: 0.5em;
-    }
-    nav#topnav li#link-home {
-        display: block;
-    }
-    nav#topnav #flexible-links {
+    #topnav #flexible-links {
         width: 100%;
     }
-    nav#topnav #flexible-links a {
+    #topnav #flexible-links a {
         font-size: 1.75rem;
     }
 }
-@media screen and (max-width: 750px) {
-    nav#topnav span#link-home-bulgarian-name {
+@media screen and (max-width: 700px) {
+    #topnav span#link-home-bulgarian-name {
         display: none;
     }
 }
