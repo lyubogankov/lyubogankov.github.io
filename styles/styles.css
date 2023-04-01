@@ -1,3 +1,8 @@
+.theme-dark {
+    background-color: rgb(104, 104, 104);
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -76,21 +81,22 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links
 
 /* Styling about-me section */
 section#about-me {
-    width: 100%;
+    width: 80%;
     height: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 2rem auto;
     
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 
 section#about-me img#headshot {
     border-radius: 100% / 75%;
     display: block;
-    /* margin: 0 auto; */
+    margin: 0 2rem;
 }
 
 #tagline {
@@ -99,4 +105,42 @@ section#about-me img#headshot {
 
 ul#connect {
     list-style: none;
+}
+/* ul#connect li div, ul#connect li div img, ul#connect li h2 {
+    display: inline-block;
+} */
+ul#connect li span, ul#connect li div {
+    display: inline-block;
+}
+ul#connect li h2 {
+    display: inline;
+}
+
+/* 
+Making the inside of the GH logo white with a body background was quite tough!
+The logo is not perfectly circular, so I couldn't give the image itself
+  border-radius 100% with background-color white.
+Had to make a div that's sliiiiiightly smaller than the logo instead :)
+*/
+ul#connect li#github span div {
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+ul#connect li#github span div img {
+    width: 37px;
+    height: 37px;
+}
+
+ul#connect li#linkedin div {
+    width: 34px;
+    height: 34px;
+    overflow: visible;
+    background-color: white;
+    border-radius: 100%;
 }
