@@ -3,16 +3,28 @@
 }
 
 
+html,
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
+}
+
+/*
+Laying out the body, header, and main content using flexboxes based on this tutorial::after
+https://www.w3docs.com/snippets/html/how-to-make-a-div-fill-the-height-of-the-remaining-space.html#example-of-making-a-lt-div-gt-fill-the-remaining-space-with-flexbox-10
+*/
+body {
     font-family: monospace;
+    display: flex;
+    flex-flow: column;
 }
 
 /* Navigation layout based on
 https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Split_Navigation
 */
 header {
+    flex: 0 1 auto;
     margin: 0;
     padding: 0;
     background-color: purple;
@@ -47,6 +59,10 @@ li.push-right {
     font-size: 2.25rem;
 }
 
+#topnav span#name-english {
+    font-weight: 700;
+}
+
 /* Navigation link styling
 https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links
 */
@@ -74,15 +90,21 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links
     }
 }
 @media screen and (max-width: 700px) {
-    #topnav span#link-home-bulgarian-name {
+    #topnav span#name-bulgarian {
         display: none;
     }
 }
 
 /* Styling about-me section */
+main {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 section#about-me {
     width: 80%;
-    height: 100%;
     max-width: 1200px;
     margin: 2rem auto;
     
@@ -102,18 +124,26 @@ section#about-me img#headshot {
 #tagline {
     font-size: 2rem;
 }
+#about-me section p {
+    font-size: 1rem;
+    /* max-width: 75%; */
+}
 
 ul#connect {
     list-style: none;
 }
-/* ul#connect li div, ul#connect li div img, ul#connect li h2 {
-    display: inline-block;
-} */
+ul#connect li {
+    display: flex;
+    align-items: center;
+}
+
 ul#connect li span, ul#connect li div {
     display: inline-block;
 }
 ul#connect li h2 {
     display: inline;
+    margin-left: 1rem;
+    font-size: 1.5rem;
 }
 
 /* 
