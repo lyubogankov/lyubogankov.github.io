@@ -4,7 +4,7 @@ body {
     font-family: monospace;
 }
 
-/* Navigation layout
+/* Navigation layout based on
 https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Split_Navigation
 */
 header {
@@ -72,4 +72,31 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links
     #topnav span#link-home-bulgarian-name {
         display: none;
     }
+}
+
+/* Styling about-me section */
+section#about-me {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+section#about-me img#headshot {
+    border-radius: 100% / 75%;
+    display: block;
+    /* margin: 0 auto; */
+}
+
+#tagline {
+    font-size: 2rem;
+}
+
+ul#connect {
+    list-style: none;
 }
