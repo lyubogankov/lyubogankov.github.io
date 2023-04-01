@@ -11,21 +11,18 @@
             <nav id="topnav">
                 <ul>
                     <!-- Always showing at least "Lyubo Gankov" -->
-                    <li class="push-left">
-                        <a href="./index.html" id="link-home">Lyubo Gankov<span id="link-home-bulgarian-name"> / Любомир Ганков</span></a>
+                    <li class="push-right">
+                        <a href="./index.html">Lyubo Gankov<span id="link-home-bulgarian-name"> / Любомир Ганков</span></a>
                     </li>
-                    <!-- Hidden, except on narrow screens -->
-                    <li id="diy-hamburger-icon">
-                        <span class="diy-hamburger-icon-bar"></span>
-                        <span class="diy-hamburger-icon-bar"></span>
-                        <span class="diy-hamburger-icon-bar"></span>
+                    <!-- May appear on same row as main page link, or new row -->
+                    <li id="flexible-links">
+                        <ul>
+                            <li><a href="/blog.html" class="menu-option">Blog</a></li>
+                            <li><a href="/resume.html" class="menu-option">Résumé</a></li>
+                        </ul>
                     </li>
-                    <!-- All other links - may appear in top bar or in dropdown menu -->
-                    <li><a href="/blog.html" class="menu-option">Blog</a></li>
-                    <li><a href="/resume.html" class="menu-option">Résumé</a></li>
                 </ul>
             </nav>
-            <script src="./scripts/hamburger_menu.js"></script>
         </header>
     </body>
 <html>
