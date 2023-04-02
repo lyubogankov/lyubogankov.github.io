@@ -26,7 +26,6 @@ a:hover {
 
 /* General Styling
 */
-
 html,
 body {
     height: 100%;
@@ -35,7 +34,7 @@ body {
 }
 
 /*
-Laying out the body, header, and main content using flexboxes based on this tutorial::after
+Laying out the body, header, and main content using flexboxes based on this tutorial
 https://www.w3docs.com/snippets/html/how-to-make-a-div-fill-the-height-of-the-remaining-space.html#example-of-making-a-lt-div-gt-fill-the-remaining-space-with-flexbox-10
 */
 body {
@@ -178,9 +177,6 @@ ul#connect li#linkedin a div {
     #topnav #flexible-links {
         width: 100%;
     }
-    #topnav #flexible-links a {
-        font-size: 1.75rem;
-    }
     #tagline {
         text-align: center;
     }
@@ -194,5 +190,11 @@ ul#connect li#linkedin a div {
 @media screen and (max-width: 700px) {
     #topnav span#name-bulgarian {
         display: none;
+    }
+    section#about-me #tagline {
+        font-size: 1.5rem;
+    }
+    section#about-me ul#connect li a h2 {
+        font-size: 1.15rem;
     }
 }

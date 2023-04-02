@@ -27,7 +27,12 @@
         </header>
         <main>
             <section id="about-me">
-                <img id="headshot" src="./images/headshot-440w.png" alt="headshot picture of Lyubo Gankov"/>
+                <img 
+                    id="headshot"
+                    srcset="./images/headshot-220w.png 220w, ./images/headshot-440w.png 440w"
+                    sizes="(max-width: 1275px) 220px, 440px"
+                    src="./images/headshot-440w.png" 
+                    alt="headshot picture of Lyubo Gankov"/>
 
                 <section>
                     <h1 id="tagline">computer engineer passionate about software</h1>
@@ -61,10 +66,22 @@
     </body>
 <html>
 
-<!-- Link save:
+<!--
+
+TODO:  light/dark theme switch (how does mozilla detect OS defalut?)
 
 MDN theme image icons:
     dark    https://developer.mozilla.org/static/media/theme-dark.2204a73b9b7fbc5e0219.svg
     light   https://developer.mozilla.org/static/media/theme-light.af1aa3887c0deadaaf2e.svg
     default https://developer.mozilla.org/static/media/theme-os-default.b14255eadab403fa2e8a.svg
+
+
+TODO: add audio for how to pronounce my name!
+    Lyubo Gankov
+    Lyubomir Gankov
+
+    two separate audio tracks / links
+
+TODO featured blog posts
+
 -->
