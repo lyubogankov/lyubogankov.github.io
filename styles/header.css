@@ -1,0 +1,54 @@
+/* Navigation layout based on
+https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Split_Navigation
+*/
+
+#topnav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+}
+
+#topnav li {
+    display: inline-block;
+}
+
+li.push-right {
+    margin-right: auto;
+}
+
+#topnav a {
+    padding: 0.25em .75em;
+}
+#topnav #name {
+    font-size: 2.25rem;
+}
+#topnav a.menu-option {
+    font-size: 1.75rem;
+}
+#topnav span#name-english {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1080px) {
+    #topnav ul {
+        justify-content: center;
+    }
+    #topnav li.push-right {
+        margin: 0 auto;
+    }
+    #topnav #flexible-links {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+    #topnav span#name-bulgarian {
+        display: none;
+    }
+}

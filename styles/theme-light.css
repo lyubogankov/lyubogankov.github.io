@@ -1,0 +1,18 @@
+.theme-light {
+    background-color: rgb(58, 6, 38);
+    color: rgb(160, 160, 160);
+}
+
+/* Navigation link styling
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links
+*/
+a {
+    text-decoration: none;
+}
+/* a:link {} */
+/* a:visited {} */
+/* a:focus {} */
+a.theme-light:hover {
+    color: white;
+}
+/* a:active {} */

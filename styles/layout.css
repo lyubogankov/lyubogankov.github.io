@@ -1,0 +1,30 @@
+/*
+Laying out the body, header, and main content using flexboxes based on this tutorial
+https://www.w3docs.com/snippets/html/how-to-make-a-div-fill-the-height-of-the-remaining-space.html#example-of-making-a-lt-div-gt-fill-the-remaining-space-with-flexbox-10
+*/
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace;
+    display: flex;
+    flex-flow: column;
+}
+
+header {
+    flex: 0 1 auto;
+    margin: 1rem 0 0 0;
+    padding: 0;
+}
+
+main {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
