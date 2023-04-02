@@ -1,7 +1,31 @@
+/*  Dark Theme
+*/
 .theme-dark {
     background-color: rgb(58, 6, 38);
+    color: rgb(160, 160, 160);
 }
 
+/* Light Theme
+*/
+
+
+/* Navigation link styling
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links
+*/
+a {
+    text-decoration: none;
+}
+/* a:link {} */
+/* a:visited {} */
+/* a:focus {} */
+a:hover {
+    color: white;
+}
+/* a:active {} */
+
+
+/* General Styling
+*/
 
 html,
 body {
@@ -16,7 +40,6 @@ https://www.w3docs.com/snippets/html/how-to-make-a-div-fill-the-height-of-the-re
 */
 body {
     font-family: monospace;
-    color: rgb(160, 160, 160);
     display: flex;
     flex-flow: column;
 }
@@ -64,18 +87,8 @@ li.push-right {
     font-weight: 700;
 }
 
-/* Navigation link styling
-https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links
+/* Styling about-me section
 */
-#topnav a:link {
-    text-decoration: none;
-    color: rgb(160, 160, 160);
-}
-#topnav a:visited {
-    color: rgb(160, 160, 160);
-}
-
-/* Styling about-me section */
 main {
     flex: 1 1 auto;
     display: flex;
