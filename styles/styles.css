@@ -1,5 +1,5 @@
 .theme-dark {
-    background-color: rgb(104, 104, 104);
+    background-color: rgb(58, 6, 38);
 }
 
 
@@ -16,6 +16,7 @@ https://www.w3docs.com/snippets/html/how-to-make-a-div-fill-the-height-of-the-re
 */
 body {
     font-family: monospace;
+    color: rgb(160, 160, 160);
     display: flex;
     flex-flow: column;
 }
@@ -25,9 +26,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Split_Navigatio
 */
 header {
     flex: 0 1 auto;
-    margin: 0;
+    margin: 1rem 0 0 0;
     padding: 0;
-    background-color: purple;
 }
 
 #topnav ul {
@@ -40,6 +40,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: right;
+    align-items: center;
 }
 
 #topnav li {
@@ -50,15 +51,15 @@ li.push-right {
     margin-right: auto;
 }
 
-#topnav #flexible-links {
-    background-color: gray;
-}
-
 #topnav a {
     padding: 0.25em .75em;
+}
+#topnav #name {
     font-size: 2.25rem;
 }
-
+#topnav a.menu-option {
+    font-size: 1.75rem;
+}
 #topnav span#name-english {
     font-weight: 700;
 }
@@ -68,14 +69,14 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links
 */
 #topnav a:link {
     text-decoration: none;
-    color: black;
+    color: rgb(160, 160, 160);
 }
 #topnav a:visited {
-    color: black;
+    color: rgb(160, 160, 160);
 }
 
 /* Adjusting top bar based on screen width */
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1080px) {
     #topnav ul {
         justify-content: center;
     }
@@ -119,6 +120,8 @@ section#about-me img#headshot {
     border-radius: 100% / 75%;
     display: block;
     margin: 0 2rem;
+    /* box-shadow: 0 0 10px 1px white rgb(58, 6, 38); */
+    outline: solid rgb(37, 4, 25);
 }
 
 #tagline {
