@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lyubo's business card</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/styles.css"/>
+        <link rel="stylesheet" href="styles/mainpage.css"/>
+
+        <script src="https://cdn.jsdelivr.net/pyodide/v0.23.0/full/pyodide.js"></script>
+    </head>
+    <body class="theme-dark">
+        <header>
+            <nav id="topnav">
+                <ul>
+                    <!-- Always showing at least "Lyubo Gankov" -->
+                    <li class="push-right" id="name">
+                        <a class="theme-dark" href="./index.html"><span id="name-english">Lyubo Gankov</span><span id="name-bulgarian"> / Любомир Ганков</span></a>
+                    </li>
+                    <!-- May appear on same row as main page link, or new row -->
+                    <li id="flexible-links">
+                        <ul>
+                            <li><a class="theme-dark menu-option" href="./about.html">About</a></li>
+                            <li><a class="theme-dark menu-option" href="./resume.html">Résumé</a></li>
+                            <li><a class="theme-dark menu-option" href="./blog.html">Blog</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="businesscard-code">
+                <p>Input</p>
+                <code><pre><textarea id="input" wrap="off" rows="15" cols="70" spellcheck="false">
+U_TO_B, CHAR_MAP = {}, {f'{i:03b}' : c 
+    for i, c in enumerate(['\n', '\\', '/', 'O', '(', ')', ' ', '_'])}
+for start, end, codepointoffset in [(0, 26, 0x41), (26, 52, 0x61), 
+        (52, 116, 0x410), (116, 195, 0x3041), (195, 274, 0x30A1)]:
+    for b in range(start, end):
+        U_TO_B[b + codepointoffset - start] = b
+
+def decode(bin: str, bchr: int=3, btot: int=6) -> str:
+    b = ''.join(f'{U_TO_B[ord(c)]:08b}' for c in bin)
+    return ''.join(
+        CHAR_MAP[b[i:i+bchr]] * (int(b[i+bchr:i+btot], 2) + 1)
+            for i in range(0, len(b), btot))
+
+print(decode('HOxチuяチgQわさwjIxばUwjQoァどgイさyjけxAせoぐけwぐでxぐしx'))
+# Run me at lyubogankov.dev/businesscard :)</textarea></pre></code>
+                
+                <button id="run" onclick="evaluatePython()">Run</button>
+                <p>Output</p>
+                <textarea id="output" wrap="off" rows="4" cols="70" spellcheck="false"></textarea>
+            </section>
+        </main>
+        <script src="./scripts/businesscard.js"></script>
+    </body>
+<html>
