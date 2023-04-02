@@ -111,7 +111,7 @@ section#about-me img#headshot {
 ul#connect {
     list-style: none;
 }
-ul#connect li {
+ul#connect li a {
     display: flex;
     align-items: center;
 }
@@ -174,7 +174,7 @@ ul#connect li#linkedin a div {
     section#about-me ul#connect {
         padding-inline-start: 0;
     }
-    section#about-me ul#connect li {
+    section#about-me ul#connect li a {
         justify-content: center;
     }
 }
