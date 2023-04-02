@@ -75,27 +75,6 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links
     color: rgb(160, 160, 160);
 }
 
-/* Adjusting top bar based on screen width */
-@media screen and (max-width: 1080px) {
-    #topnav ul {
-        justify-content: center;
-    }
-    #topnav li.push-right {
-        margin: 0 auto;
-    }
-    #topnav #flexible-links {
-        width: 100%;
-    }
-    #topnav #flexible-links a {
-        font-size: 1.75rem;
-    }
-}
-@media screen and (max-width: 700px) {
-    #topnav span#name-bulgarian {
-        display: none;
-    }
-}
-
 /* Styling about-me section */
 main {
     flex: 1 1 auto;
@@ -126,10 +105,7 @@ section#about-me img#headshot {
 
 #tagline {
     font-size: 2rem;
-}
-#about-me section p {
-    font-size: 1rem;
-    /* max-width: 75%; */
+    max-width: 500px;
 }
 
 ul#connect {
@@ -176,4 +152,34 @@ ul#connect li#linkedin div {
     overflow: visible;
     background-color: white;
     border-radius: 100%;
+}
+
+/* Adjusting top bar and other elements based on screen width */
+@media screen and (max-width: 1080px) {
+    #topnav ul {
+        justify-content: center;
+    }
+    #topnav li.push-right {
+        margin: 0 auto;
+    }
+    #topnav #flexible-links {
+        width: 100%;
+    }
+    #topnav #flexible-links a {
+        font-size: 1.75rem;
+    }
+    #tagline {
+        text-align: center;
+    }
+    section#about-me ul#connect {
+        padding-inline-start: 0;
+    }
+    section#about-me ul#connect li {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 700px) {
+    #topnav span#name-bulgarian {
+        display: none;
+    }
 }
