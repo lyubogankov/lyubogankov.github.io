@@ -5,7 +5,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles/styles.css"/>
-        <link rel="stylesheet" href="styles/mainpage.css"/>
+        <link rel="stylesheet" href="styles/prism-vsc-dark-plus.css" />
+        <link rel="stylesheet" href="styles/businesscard.css"/>
 
         <script src="https://cdn.jsdelivr.net/pyodide/v0.23.0/full/pyodide.js"></script>
     </head>
@@ -29,10 +30,12 @@
             </nav>
         </header>
         <main>
+            <!-- Guides I followed:
+            https://pyodide.org/en/stable/usage/quickstart.html#alternative-example
+            https://medium.com/codex/python-in-web-easy-5f7de3813055-->
             <section id="businesscard-code">
-                <p>Input</p>
-                <code><pre><textarea id="input" wrap="off" rows="15" cols="70" spellcheck="false">
-U_TO_B, CHAR_MAP = {}, {f'{i:03b}' : c 
+                <!-- <pre><code class="language-python"><textarea id="input" wrap="off" rows="15" cols="70" spellcheck="false"></textarea> -->
+                <pre><code id="input" class="language-python">U_TO_B, CHAR_MAP = {}, {f'{i:03b}' : c 
     for i, c in enumerate(['\n', '\\', '/', 'O', '(', ')', ' ', '_'])}
 for start, end, codepointoffset in [(0, 26, 0x41), (26, 52, 0x61), 
         (52, 116, 0x410), (116, 195, 0x3041), (195, 274, 0x30A1)]:
@@ -46,13 +49,27 @@ def decode(bin: str, bchr: int=3, btot: int=6) -> str:
             for i in range(0, len(b), btot))
 
 print(decode('HOxチuяチgQわさwjIxばUwjQoァどgイさyjけxAせoぐけwぐでxぐしx'))
-# Run me at lyubogankov.dev/businesscard :)</textarea></pre></code>
+# Run me at lyubogankov.dev/businesscard :)</code></pre>  
+                <!-- </textarea> -->
                 
                 <button id="run" onclick="evaluatePython()">Run</button>
-                <p>Output</p>
-                <textarea id="output" wrap="off" rows="4" cols="70" spellcheck="false"></textarea>
+                <textarea id="output" wrap="off" rows="4" spellcheck="false" disabled></textarea>
             </section>
         </main>
+        <script src="./scripts/prism.js"></script>
         <script src="./scripts/businesscard.js"></script>
     </body>
 <html>
+
+<!-- 
+Next steps:
+
+syntax highlighting!
+
+format the boxes!
+
+Add explanation about how it works
+- text <-> binary
+- binary <-> unicode characters
+
+ -->
