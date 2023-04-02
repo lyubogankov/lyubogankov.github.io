@@ -116,10 +116,10 @@ ul#connect li {
     align-items: center;
 }
 
-ul#connect li span, ul#connect li div {
+ul#connect li a span, ul#connect li a div {
     display: inline-block;
 }
-ul#connect li h2 {
+ul#connect li a h2 {
     display: inline;
     margin-left: 1rem;
     font-size: 1.5rem;
@@ -131,7 +131,7 @@ The logo is not perfectly circular, so I couldn't give the image itself
   border-radius 100% with background-color white.
 Had to make a div that's sliiiiiightly smaller than the logo instead :)
 */
-ul#connect li#github span div {
+ul#connect li#github a span div {
     border-radius: 100%;
     width: 35px;
     height: 35px;
@@ -141,12 +141,12 @@ ul#connect li#github span div {
     align-items: center;
     overflow: visible;
 }
-ul#connect li#github span div img {
+ul#connect li#github a span div img {
     width: 37px;
     height: 37px;
 }
 
-ul#connect li#linkedin div {
+ul#connect li#linkedin a div {
     width: 34px;
     height: 34px;
     overflow: visible;
