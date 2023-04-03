@@ -51,6 +51,8 @@ print(decode('HOxチuяチgQわさwjIxばUwjQoァどgイさyjけxAせoぐけwぐ
 # Run me at lyubogankov.dev/businesscard :)</code></pre>  
                 
                 <div id="output-box">
+
+                    <!-- https://codepen.io/kaista/pen/WxqGBq, by Kaitlyn Stahl -->
                     <div id="play-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="7rem">
                             <polygon class="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69"/>
@@ -62,21 +64,52 @@ print(decode('HOxチuяチgQわさwjIxばUwjQoァどgイさyjけxAせoぐけwぐ
                 </div>
 
             </section>
+            <section id="businesscard-explanation">
+                <h1>Encoding</h1>
+                <h2>text / character run-length </h2>
+                <h2>char run-len / binary</h2>
+                <h2>binary / Unicode</h2>
+            </section>
         </main>
         <script src="./scripts/prism.js"></script>
         <script src="./scripts/businesscard.js"></script>
     </body>
+    <footer>
+        <ul id="connect">
+            <li id="github">
+                <a class="theme-dark" href="https://github.com/lyubogankov" target="_blank" referrerpolicy="no-referrer">
+                    <!-- https://github.com/logos -->
+                    <!-- <span>
+                        <div>
+                            <img src="./images/logos/GitHub/github-mark.svg" alt="GitHub Invertocat logo"/>
+                        </div>
+                    </span> -->
+                    <div>
+                        <img src="./images/logos/GitHub/github-mark-white.svg" alt="GitHub Invertocat logo"/>
+                    </div>
+                    <h2>peruse projects 👀</h2>
+                </a>
+            </li>
+            <li id="linkedin">
+                <a class="theme-dark" href="https://linkedin.com/in/lyubo-gankov" target="_blank" referrerpolicy="no-referrer">
+                    <!-- https://brand.linkedin.com/content/brand/global/en_us/index/visual-identity/logo -->
+                    <div>
+                        <!-- <img src="./images/logos/LinkedIn/Blue/1x/In-Blue-34-TM.png" alt="LinkedIn logo"/> -->
+                        <img src="./images/logos/LinkedIn/White/1x/In-White-34-TM.png" alt="LinkedIn logo"/>
+                    </div>
+                    <h2>let's connect!</h2>
+                </a> 
+            </li>
+        </ul>
+    </footer>
 <html>
 
 <!-- 
 Next steps:
 
-syntax highlighting!
-
-format the boxes!
-
-Add explanation about how it works
-- text <-> binary
+Add explanation about how it works, give a single-unicode-character-output example
+- text <-> runlen
+- runlen <-> binary
 - binary <-> unicode characters
 
  -->

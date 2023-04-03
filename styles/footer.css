@@ -1,0 +1,26 @@
+footer ul#connect {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+footer ul#connect li a {
+    display: flex;
+    align-items: center;
+}
+footer ul#connect li a div, footer ul#connect li a div {
+    display: inline;
+    flex: 0 1 auto;
+}
+footer ul#connect li a h2 {
+    display: inline;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+footer ul#connect li#github a div img {
+    width: 37px;
+    height: 37px;
+    margin-right: 7px;
+}
+footer ul#connect li#github {
+    margin-right: 3rem;
+}

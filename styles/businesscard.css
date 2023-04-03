@@ -1,10 +1,8 @@
-
-
-section#businesscard-code pre, div#play-btn, div#output {
-    box-shadow: 10px 10px 10px black;
+main {
+    flex-wrap: wrap;
 }
 
-/* */
+/* grouping container for play button and "terminal"*/
 div#output-box {
     margin-top: 2rem;
     display: flex;
@@ -15,12 +13,9 @@ div#output-box {
 /* Play button */
 #play-btn {
     flex: 0 1 auto;
-    
     margin-right: 2rem;
-    
     box-sizing: border-box;
     border: 3px solid rgb(160, 160, 160);
-
     background-color: rgba(160, 160, 160, 0.2);
 }
 #play-btn svg {
@@ -40,7 +35,10 @@ div#output {
     font-size: 0.75rem;
 }
 
-/* Business card font size / line height */
+/* Business card font size / line height and box-shadow adjustment */
+section#businesscard-code pre, div#play-btn, div#output {
+    box-shadow: 10px 10px 10px black;
+}
 code {
     font-size: 1rem;
     line-height: 1.5;
@@ -62,4 +60,12 @@ code {
     section#businesscard-code pre, div#play-btn, div#output {
         box-shadow: 5px 5px 5px black;
     }
+}
+
+/* explanation */
+section#businesscard-explanation {
+    margin-left: 3rem;
+}
+section#businesscard-explanation h1 {
+    font-size: 2rem;
 }
