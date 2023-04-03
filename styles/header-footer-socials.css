@@ -1,0 +1,46 @@
+/* #topnav ul li#flexible-links ul li.header-footer-socials {
+    display: none;
+} */
+
+li#github-header a span div {
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(215, 215, 215); /* white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+li#github-header a span div:hover {
+    background-color: white;
+}
+
+li#linkedin-header div {
+    width: 34px;
+    height: 34px;
+    overflow: visible;
+    background-color: rgb(215, 215, 215); /* white */
+    border-radius: 100%;
+}
+li#linkedin-header div:hover {
+    background-color: white;
+}
+
+img.logo-github {
+    width: 37px;
+    height: 37px;
+}
+
+.header-footer-socials {
+    display: none !important;
+}
+
+@media screen and (max-width: 670px) {
+    footer ul#connect {
+        display: none;
+    }
+    .header-footer-socials {
+        display: flex !important;
+    }
+}
