@@ -1,7 +1,3 @@
-main {
-    flex-wrap: wrap;
-}
-
 /* grouping container for play button and "terminal"*/
 div#output-box {
     margin-top: 2rem;
@@ -31,7 +27,7 @@ div#output {
     flex: 1 1 auto;
     padding: 0.5rem;
     background-color: black;
-    color: rgb(160, 160, 160);
+    color: rgb(215, 215, 215);
     font-size: 0.75rem;
 }
 
