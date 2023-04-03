@@ -34,7 +34,6 @@
             https://pyodide.org/en/stable/usage/quickstart.html#alternative-example
             https://medium.com/codex/python-in-web-easy-5f7de3813055-->
             <section id="businesscard-code">
-                <!-- <pre><code class="language-python"><textarea id="input" wrap="off" rows="15" cols="70" spellcheck="false"></textarea> -->
                 <pre><code id="input" class="language-python">U_TO_B, CHAR_MAP = {}, {f'{i:03b}' : c 
     for i, c in enumerate(['\n', '\\', '/', 'O', '(', ')', ' ', '_'])}
 for start, end, codepointoffset in [(0, 26, 0x41), (26, 52, 0x61), 
@@ -50,10 +49,18 @@ def decode(bin: str, bchr: int=3, btot: int=6) -> str:
 
 print(decode('HOxチuяチgQわさwjIxばUwjQoァどgイさyjけxAせoぐけwぐでxぐしx'))
 # Run me at lyubogankov.dev/businesscard :)</code></pre>  
-                <!-- </textarea> -->
                 
-                <button id="run" onclick="evaluatePython()">Run</button>
-                <textarea id="output" wrap="off" rows="4" spellcheck="false" disabled></textarea>
+                <div id="output-box">
+                    <div id="play-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="7rem">
+                            <polygon class="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69"/>
+                        </svg> 
+                    </div>
+    
+                    <!-- This is where the pyodide output goes! -->
+                    <div id="output"><pre></pre></div>
+                </div>
+
             </section>
         </main>
         <script src="./scripts/prism.js"></script>

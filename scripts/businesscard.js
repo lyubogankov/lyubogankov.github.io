@@ -1,23 +1,23 @@
-const output = document.getElementById("output");
+const output = document.getElementById("output").firstChild;
 const input = document.getElementById("input");
+const runbutton = document.getElementById("play-btn");
 
 // https://pyodide.org/en/stable/usage/quickstart.html#alternative-example
 
-output.value = "initializing console output...\n";
+output.textContent = "initializing console output...\n";
 
 // initialize pyodide
+
 function replaceOutput(contents) { 
-    output.value = contents;
-    output.scrollTop = output.scrollHeight;
+    output.textContent = contents;
 }
 function appendToOutput(contents) { 
-    output.value += `${contents}\n`;
-    output.scrollTop = output.scrollHeight;
+    output.textContent += `${contents}\n`;
 }
 
 async function main() {
     let pyodide = await loadPyodide({stdout: appendToOutput, stderr: appendToOutput});
-    output.value = "console output ready!\n";
+    output.textContent = "console output ready!\n";
     return pyodide;
 }
 let pyodideReadyPromise = main();
@@ -27,10 +27,14 @@ async function evaluatePython() {
     try {
         // await pyodide.loadPackagesFromImports(input.value, appendToOutput, appendToOutput);
         // clear the screen
-        output.value = "";
+        output.textContent = "";
         // don't need to output this, just want the "print" statement to run!
         let returnval = pyodide.runPython(input.textContent);
     } catch (err) {
-        output.value = err;
+        output.textContent = err;
     }
+    output.textContent = output.textContent.replace('\n\n', '\n');
 }
+
+// Create event listener for the play button
+runbutton.addEventListener("click", () => { evaluatePython(); } );
