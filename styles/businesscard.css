@@ -4,6 +4,10 @@ section#businesscard-explanation {
 }
 section#businesscard-explanation h1 {
     font-size: 2rem;
+    font-weight: 400;
+}
+section#businesscard-explanation h2 {
+    font-weight: 400;
 }
 
 /* grouping container for play button and "terminal"*/

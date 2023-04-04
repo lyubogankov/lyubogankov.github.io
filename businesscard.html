@@ -83,8 +83,29 @@ print(decode('HOxチuяチgQわさwjIxばUwjQoァどgイさyjけxAせoぐけwぐ
             <section id="businesscard-explanation">
                 <h1>Encoding</h1>
                 <h2>text / character run-length </h2>
-                <h2>char run-len / binary</h2>
-                <h2>binary / Unicode</h2>
+                <p><pre><code class="language-python">text = '(((('; runlen = ('(', 4)</code></pre></p>
+                <h2>char run-len / binary (6-bit)</h2>
+                <p><pre><code class="language-python"># bits per char = math.upper(math.log2(source text # unique characters))
+CHAR_MAP = {'\n': 000, '\\': 001, '/': 010, 'O': 011, 
+             '(': 100,  ')': 101, ' ': 110, '_': 111}
+# runlen bits depends on largest run from source text (for me, 3 bits)
+# subtract 1 from runlen, as each character repeats at least once!
+binary = CHAR_MAP[runlen[0]] + f'{(runlen[1] - 1):03b}'  # '100' + '011'</code></pre></p>
+                <h2>binary / Unicode (8-bit)</h2>
+                <p><pre><code class="language-python"># [00000000, 00011010) = [  0,  26) -> a-z       (Latin lower)
+# [00011010, 00110100) = [ 26,  52) -> A-Z       (Latin upper)
+# [00110100, 01110100) = [ 52, 116) -> А-Я, а-я  (Cyrillic upper/lower)
+# [01110100, 11000011) = [116, 195) -> ぁ-わ     (Japanese hiragana)
+# [11000011, 11111111] = [195, 255] -> ァ-ポ     (Japanese katakana)
+
+runlens = [('\n', 7), ('(', 4), ('/', 7), ('\\', 3)]
+#         v-1--*v-2--*v-3--*v-4--*   runlen = 6-bit encoding
+binary = '000110100011010110001010'
+#         ^-A----*^-B----*^-C----*   unicode = 8-bit encoding
+unicode = 'aБし'
+
+</code></pre></p>
+
             </section>
         </main>
         <script src="./scripts/prism.js"></script>
