@@ -73,9 +73,16 @@ code {
     }
 } */
 @media screen and (max-width: 820px) {
+    section#businesscard-code pre {
+        padding: 0.25em 1.5em;
+	    margin: 0;
+        font-family: monospace;
+        letter-spacing: 0.03em;
+    }
     code {
-        font-size: 0.55rem;
+        font-size: 7.5px;
         line-height: 0;
+        /* height: 100px; */
     }
     section#businesscard-code pre, div#play-btn, div#output {
         box-shadow: 5px 5px 5px black;

@@ -51,4 +51,10 @@ li.push-right {
     #topnav span#name-bulgarian {
         display: none;
     }
+    #topnav #name {
+        font-size: 2rem;
+    }
+    #topnav a.menu-option {
+        font-size: 1.5rem;
+    }
 }

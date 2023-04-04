@@ -4,7 +4,7 @@ const runbutton = document.getElementById("play-btn");
 
 // https://pyodide.org/en/stable/usage/quickstart.html#alternative-example
 
-output.textContent = "initializing console output...\n";
+output.textContent = "initializing...\n";
 
 // initialize pyodide
 
@@ -17,7 +17,7 @@ function appendToOutput(contents) {
 
 async function main() {
     let pyodide = await loadPyodide({stdout: appendToOutput, stderr: appendToOutput});
-    output.textContent = "console output ready!\n";
+    output.textContent = "ready!\n";
     return pyodide;
 }
 let pyodideReadyPromise = main();
