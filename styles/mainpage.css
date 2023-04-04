@@ -44,10 +44,10 @@ ul#connect li#github a div img {
     margin-right: 7px;
 }
 
-/* ul#connect li#linkedin a div img {
+ul#connect li#linkedin a div {
     width: 44px;
     height: 34px;
-} */
+}
 
 /* Adjusting top bar and other elements based on screen width */
 @media screen and (max-width: 1080px) {
