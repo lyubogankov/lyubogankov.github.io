@@ -40,3 +40,18 @@ img.logo-github {
         display: flex !important;
     }
 }
+@media screen and (max-width: 700px) {
+    
+    li#github-header a span div {
+        width: 28px;
+        height: 28px;
+    }
+    img.logo-github {
+        width: 30px;
+        height: 30px;
+    }
+    li#linkedin-header div {
+        width: 27.5px;
+        height: 27.8px;
+    }
+}

@@ -34,10 +34,9 @@
                             <li id="linkedin-header" class="header-footer-socials"><a>
                                 <div>
                                     <img 
-                                        srcset="./images/logos/LinkedIn/Blue/1x/In-Blue-34-TM.png,
-                                                ./images/logos/LinkedIn/Blue/1x/In-Blue-48-TM.png 1.4x, 
-                                                ./images/logos/LinkedIn/Blue/1x/In-Blue-72-TM.png 2.1x"
-                                        src="./images/logos/LinkedIn/White/1x/In-Blue-34-TM.png"
+                                        srcset="./images/logos/LinkedIn/Blue/1x/In-Blue-26-TM.png 36w, ./images/logos/LinkedIn/Blue/1x/In-Blue-34-TM.png 44w"
+                                        sizes="(max-width: 700px) 36px, 44px"
+                                        src="./images/logos/LinkedIn/Blue/1x/In-Blue-34-TM.png"
                                         alt="LinkedIn logo"/>
                                 </div>
                             </a></li>
@@ -47,11 +46,10 @@
             </nav>
         </header>
         <main>
-            <!-- Guides I followed:
-            https://pyodide.org/en/stable/usage/quickstart.html#alternative-example
-            https://medium.com/codex/python-in-web-easy-5f7de3813055-->
             <section id="businesscard-code">
-                <!-- <pre><code id="input" class="language-python"> -->
+                <!-- Guides I followed:
+                https://pyodide.org/en/stable/usage/quickstart.html#alternative-example
+                https://medium.com/codex/python-in-web-easy-5f7de3813055-->
                 <pre><code id="input" class="language-python">U_TO_B, CHAR_MAP = {}, {f'{i:03b}' : c 
     for i, c in enumerate(['\n', '\\', '/', 'O', '(', ')', ' ', '_'])}
 for start, end, codepointoffset in [(0, 26, 0x41), (26, 52, 0x61), 

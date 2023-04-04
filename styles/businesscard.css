@@ -88,11 +88,17 @@ code {
     }
     div#output-box {
         margin-top: 1rem;
-        height: 5.5rem;
+        height: 4.5rem;
     }
     #play-btn {
         flex: 0 1 auto;
         margin-right: 1rem;
+    }
+    #play-btn svg {
+        width: 4rem;
+    }
+    div#output {
+        font-size: 0.6rem;
     }
 }
 /* @media screen and (max-width: 600px) {
@@ -104,3 +110,16 @@ code {
         box-shadow: 4px 4px 4px black;
     }
 } */
+
+
+@media screen and (max-width: 700px) {
+    section#businesscard-explanation {
+        margin-left: 2rem;
+    }
+    section#businesscard-explanation h1 {
+        font-size: 1.5rem;
+    }
+    section#businesscard-explanation h2 {
+        font-size: 1rem;
+    }
+}

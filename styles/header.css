@@ -52,9 +52,9 @@ li.push-right {
         display: none;
     }
     #topnav #name {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     #topnav a.menu-option {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
