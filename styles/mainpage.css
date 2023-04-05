@@ -50,7 +50,7 @@ ul#connect li#linkedin a div {
 }
 
 /* Adjusting top bar and other elements based on screen width */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1232px) {
     #tagline {
         text-align: center;
     }
