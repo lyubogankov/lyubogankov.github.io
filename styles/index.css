@@ -22,6 +22,7 @@ section#about-me img#headshot {
     max-width: 500px;
 }
 
+/* socials links */
 ul#connect {
     list-style: none;
 }
@@ -38,15 +39,43 @@ ul#connect li a h2 {
     margin-left: 1rem;
     font-size: 1.5rem;
 }
-ul#connect li#github a div img {
+
+li#github a span div {
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(215, 215, 215);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+/* ul#connect li#github a div img { */
+ul#connect li#github a span div img {
     width: 37px;
     height: 37px;
-    margin-right: 7px;
+    /* margin-right: 7px; */
+}
+li#github a:hover span div{
+    background-color: white;
 }
 
-ul#connect li#linkedin a div {
+/* ul#connect li#linkedin a div {
     width: 44px;
     height: 34px;
+} */
+li#linkedin div {
+    width: 34px;
+    height: 34px;
+    overflow: visible;
+    background-color: rgb(215, 215, 215);
+    border-radius: 100%;
+    /* display: flex;
+    justify-content: left;
+    align-items: start; */
+}
+li#linkedin a:hover div {
+    background-color: white;
 }
 
 /* Adjusting top bar and other elements based on screen width */
