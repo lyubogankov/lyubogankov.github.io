@@ -5,7 +5,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles/styles.css"/>
-        <link rel="stylesheet" href="styles/mainpage.css"/>
+        <link rel="stylesheet" href="styles/index.css"/>
     </head>
     <body class="theme-dark">
         <header>
@@ -31,7 +31,7 @@
                 <img 
                     id="headshot"
                     srcset="./images/headshot-220w.png 220w, ./images/headshot-440w.png 440w"
-                    sizes="(max-width: 700px) 220px, 440px"
+                    sizes="(max-width: 700px) 220px, (max-height: 580px) 220px, 440px"
                     src="./images/headshot-440w.png" 
                     alt="headshot picture of Lyubo Gankov"/>
 
@@ -69,6 +69,11 @@
         </main>
     </body>
 <html>
+
+<!-- 
+https://stackoverflow.com/a/29200325
+Nothing special needed to support exclusion of .html extension on web pages!
+ -->
 
 <!--
 
