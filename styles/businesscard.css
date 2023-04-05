@@ -3,15 +3,19 @@
     display: flex !important;
 }
 
-/* explanation */
-section#businesscard-explanation {
-    margin-left: 3rem;
+section {
+    margin: 1.5rem;
 }
+
+/* explanation */
+/* section#businesscard-explanation {
+    margin-left: 3rem;
+} */
 section#businesscard-explanation h1 {
     font-size: 2rem;
     font-weight: 400;
     margin: 0;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 section#businesscard-explanation h2 {
     font-weight: 400;
@@ -54,7 +58,7 @@ div#output {
     font-size: 0.75rem;
 }
 
-/* Business card font size / line height and box-shadow adjustment */
+/* business card, play button output terminal explanation size adjustment */
 section#businesscard-code pre, div#play-btn, div#output {
     box-shadow: 10px 10px 10px black;
 }
@@ -87,19 +91,18 @@ code {
         margin-right: 1rem;
     }
 } */
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 700px) {
     section#businesscard-code pre {
         padding: 0.25em 1.5em;
 	    margin: 0;
         font-family: monospace;
-        /* letter-spacing: 0.03em; */
     }
     code {
         font-size: 7.5px;
         line-height: 0;
     }
     section#businesscard-code pre, div#play-btn, div#output {
-        box-shadow: 5px 5px 5px black;
+        box-shadow: 4px 4px 4px black;
     }
     div#output-box {
         margin-top: 1rem;
@@ -115,32 +118,10 @@ code {
     div#output {
         font-size: 0.6rem;
     }
-}
-/* @media screen and (max-width: 600px) {
-    code {
-        font-size: 0.67rem;
-        line-height: 0.6;
-    }
-    section#businesscard-code pre, div#play-btn, div#output {
-        box-shadow: 4px 4px 4px black;
-    }
-} */
-
-
-@media screen and (max-width: 700px) {
-    section#businesscard-explanation {
-        margin-left: 2rem;
-    }
     section#businesscard-explanation h1 {
         font-size: 1.3rem;
     }
     section#businesscard-explanation h2 {
         font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    section#businesscard-explanation {
-        margin-left: 0;
     }
 }
