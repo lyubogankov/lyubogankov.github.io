@@ -85,22 +85,22 @@ print(decode('HOxチuяチgQわさwjIxばUwjQoァどgイさyjけxAせoぐけwぐ
 
             </section>
             <section id="businesscard-explanation">
-                <h1>Encoding</h1>
+                <h1>Encoding example</h1>
                 <h2>text / character run-length </h2>
-                <pre><code class="language-python">text = '(((('; runlen = ('(', 4)  # loop over source text and count</code></pre>
+                <pre><code class="language-python">text = 'OOOO'; char_runlen = ('O', 4)  # loop over source text, count</code></pre>
                 <h2>char run-len / binary (6-bit)</h2>
                 <pre><code class="language-python"># bits per char = math.upper(math.log2(unique characters in source text))
 CHAR_MAP = {'\n': '000', '\\': '001', '/': '010', 'O': '011', 
              '(': '100',  ')': '101', ' ': '110', '_': '111'}
 # runlen bits depends on largest run from source text (for me, 3 bits)
 # subtract 1 from runlen, as each character repeats at least once!
-binary = CHAR_MAP[runlen[0]] + f'{(runlen[1] - 1):03b}'  # '100' + '011'</code></pre>
+binary = CHAR_MAP['O'] + f'{(4 - 1):03b}'  # '011' + '011'</code></pre>
                 <h2>binary / Unicode (8-bit)</h2>
-                <pre><code class="language-python"># [00000000, 00011010) = [  0,  26) -> a-z       (Latin lower)
-# [00011010, 00110100) = [ 26,  52) -> A-Z       (Latin upper)
-# [00110100, 01110100) = [ 52, 116) -> А-Я, а-я  (Cyrillic upper/lower)
-# [01110100, 11000011) = [116, 195) -> ぁ-わ     (Japanese hiragana)
-# [11000011, 11111111] = [195, 255] -> ァ-ポ     (Japanese katakana)
+                <pre><code class="language-python"># [00000000, 00011010) = [  0,  26) -> a-z       # Latin lower
+# [00011010, 00110100) = [ 26,  52) -> A-Z       # Latin upper
+# [00110100, 01110100) = [ 52, 116) -> А-Я, а-я  # Cyrillic upper/lower
+# [01110100, 11000011) = [116, 195) -> ぁ-わ     # Japanese hiragana
+# [11000011, 11111111] = [195, 255] -> ァ-ポ     # Japanese katakana
 runlens = [('\n', 7), ('(', 4), ('/', 7), ('\\', 3)]
 binary =   '000110' + '100011' + '010110' + '001010'       # 6-bit enc
 _unicode = 'aБし'  # '00011010' + '00110101' + '10001010'  # 8-bit enc</code></pre>

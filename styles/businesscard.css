@@ -4,18 +4,15 @@
 }
 
 section {
-    margin: 1.5rem;
+    margin: 2rem;
 }
 
 /* explanation */
-/* section#businesscard-explanation {
-    margin-left: 3rem;
-} */
 section#businesscard-explanation h1 {
     font-size: 2rem;
     font-weight: 400;
     margin: 0;
-    /* margin-top: 2rem; */
+    margin-top: 2rem;
 }
 section#businesscard-explanation h2 {
     font-weight: 400;
@@ -58,7 +55,6 @@ div#output {
     font-size: 0.75rem;
 }
 
-/* business card, play button output terminal explanation size adjustment */
 section#businesscard-code pre, div#play-btn, div#output {
     box-shadow: 10px 10px 10px black;
 }
@@ -66,31 +62,26 @@ code {
     font-size: 1rem;
     line-height: 1.5;
 }
-/* @media screen and (max-width: 820px) {
-    code {
-        font-size: 0.8rem;
-        line-height: 1.4;
+
+/* business card, play button output terminal explanation size adjustment */
+@media screen and (max-width: 1300px) {
+    /* switching flexbox dir so that the content stays at the top! */
+    main {
+        flex-direction: column;
     }
-    section#businesscard-code pre, div#play-btn, div#output {
-        box-shadow: 7px 7px 7px black;
-    }
-} */
-/* @media screen and (max-width: 820px) {
-    code {
-        font-size: 0.65rem;
-        line-height: 0.5;
-    }
-    section#businesscard-code pre, div#play-btn, div#output {
-        box-shadow: 5px 5px 5px black;
-    }
-    div#output-box {
-        margin-top: 1rem;
-    }
-    #play-btn {
+    section#businesscard-code {
         flex: 0 1 auto;
-        margin-right: 1rem;
     }
-} */
+    section#businesscard-explanation {
+        flex: 1 1 auto;
+    }
+    section {
+        margin: 0.75rem;
+    }
+    section#businesscard-explanation h1 {
+        margin-top: 0;
+    }
+}
 @media screen and (max-width: 700px) {
     section#businesscard-code pre {
         padding: 0.25em 1.5em;
@@ -102,7 +93,7 @@ code {
         line-height: 0;
     }
     section#businesscard-code pre, div#play-btn, div#output {
-        box-shadow: 4px 4px 4px black;
+        box-shadow: 5px 5px 5px black;
     }
     div#output-box {
         margin-top: 1rem;
