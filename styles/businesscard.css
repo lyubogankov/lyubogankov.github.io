@@ -115,4 +115,8 @@ code {
     section#businesscard-explanation h2 {
         font-size: 1rem;
     }
+    section#businesscard-explanation pre {
+        padding: 0.25em 1em;
+        margin: 0;
+    }
 }
