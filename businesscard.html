@@ -24,22 +24,26 @@
                             <li><a class="theme-dark menu-option" href="./about.html">About</a></li>
                             <li><a class="theme-dark menu-option" href="./resume.html">Résumé</a></li>
                             <li><a class="theme-dark menu-option" href="./blog.html">Blog</a></li>
-                            <li id="github-header" class="header-footer-socials"><a>
-                                <span>
+                            <li id="github-header" class="header-footer-socials">
+                                <a href="https://github.com/lyubogankov" target="_blank" referrerpolicy="no-referrer">
+                                    <span>
+                                        <div>
+                                            <img class="logo-github" src="./images/logos/GitHub/github-mark.svg" alt="GitHub Invertocat logo"/>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                            <li id="linkedin-header" class="header-footer-socials">
+                                <a href="https://linkedin.com/in/lyubo-gankov" target="_blank" referrerpolicy="no-referrer">
                                     <div>
-                                        <img class="logo-github" src="./images/logos/GitHub/github-mark.svg" alt="GitHub Invertocat logo"/>
+                                        <img 
+                                            srcset="./images/logos/LinkedIn/Blue/1x/In-Blue-26-TM.png 36w, ./images/logos/LinkedIn/Blue/1x/In-Blue-34-TM.png 44w"
+                                            sizes="(max-width: 700px) 36px, 44px"
+                                            src="./images/logos/LinkedIn/Blue/1x/In-Blue-34-TM.png"
+                                            alt="LinkedIn logo"/>
                                     </div>
-                                </span>
-                            </a></li>
-                            <li id="linkedin-header" class="header-footer-socials"><a>
-                                <div>
-                                    <img 
-                                        srcset="./images/logos/LinkedIn/Blue/1x/In-Blue-26-TM.png 36w, ./images/logos/LinkedIn/Blue/1x/In-Blue-34-TM.png 44w"
-                                        sizes="(max-width: 700px) 36px, 44px"
-                                        src="./images/logos/LinkedIn/Blue/1x/In-Blue-34-TM.png"
-                                        alt="LinkedIn logo"/>
-                                </div>
-                            </a></li>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -83,65 +87,27 @@ print(decode('HOxチuяチgQわさwjIxばUwjQoァどgイさyjけxAせoぐけwぐ
             <section id="businesscard-explanation">
                 <h1>Encoding</h1>
                 <h2>text / character run-length </h2>
-                <p><pre><code class="language-python">text = '(((('; runlen = ('(', 4)</code></pre></p>
+                <pre><code class="language-python">text = '(((('; runlen = ('(', 4)  # loop over source text and count</code></pre>
                 <h2>char run-len / binary (6-bit)</h2>
-                <p><pre><code class="language-python"># bits per char = math.upper(math.log2(source text # unique characters))
-CHAR_MAP = {'\n': 000, '\\': 001, '/': 010, 'O': 011, 
-             '(': 100,  ')': 101, ' ': 110, '_': 111}
+                <pre><code class="language-python"># bits per char = math.upper(math.log2(unique characters in source text))
+CHAR_MAP = {'\n': '000', '\\': '001', '/': '010', 'O': '011', 
+             '(': '100',  ')': '101', ' ': '110', '_': '111'}
 # runlen bits depends on largest run from source text (for me, 3 bits)
 # subtract 1 from runlen, as each character repeats at least once!
-binary = CHAR_MAP[runlen[0]] + f'{(runlen[1] - 1):03b}'  # '100' + '011'</code></pre></p>
+binary = CHAR_MAP[runlen[0]] + f'{(runlen[1] - 1):03b}'  # '100' + '011'</code></pre>
                 <h2>binary / Unicode (8-bit)</h2>
-                <p><pre><code class="language-python"># [00000000, 00011010) = [  0,  26) -> a-z       (Latin lower)
+                <pre><code class="language-python"># [00000000, 00011010) = [  0,  26) -> a-z       (Latin lower)
 # [00011010, 00110100) = [ 26,  52) -> A-Z       (Latin upper)
 # [00110100, 01110100) = [ 52, 116) -> А-Я, а-я  (Cyrillic upper/lower)
 # [01110100, 11000011) = [116, 195) -> ぁ-わ     (Japanese hiragana)
 # [11000011, 11111111] = [195, 255] -> ァ-ポ     (Japanese katakana)
-
 runlens = [('\n', 7), ('(', 4), ('/', 7), ('\\', 3)]
-#         v-1--*v-2--*v-3--*v-4--*   runlen = 6-bit encoding
-binary = '000110100011010110001010'
-#         ^-A----*^-B----*^-C----*   unicode = 8-bit encoding
-unicode = 'aБし'
-
-</code></pre></p>
+binary =   '000110' + '100011' + '010110' + '001010'       # 6-bit enc
+_unicode = 'aБし'  # '00011010' + '00110101' + '10001010'  # 8-bit enc</code></pre>
 
             </section>
         </main>
         <script src="./scripts/prism.js"></script>
         <script src="./scripts/businesscard.js"></script>
     </body>
-    <footer>
-        <ul id="connect">
-            <li id="github-footer">
-                <a class="theme-dark" href="https://github.com/lyubogankov" target="_blank" referrerpolicy="no-referrer">
-                    <!-- https://github.com/logos -->
-                    <!-- <span>
-                        <div>
-                            <img src="./images/logos/GitHub/github-mark.svg" alt="GitHub Invertocat logo"/>
-                        </div>
-                    </span> -->
-                    <div>
-                        <img class="logo-github" src="./images/logos/GitHub/github-mark-white.svg" alt="GitHub Invertocat logo"/>
-                    </div>
-                    <h2>peruse projects 👀</h2>
-                </a>
-            </li>
-            <li id="linkedin">
-                <a class="theme-dark" href="https://linkedin.com/in/lyubo-gankov" target="_blank" referrerpolicy="no-referrer">
-                    <!-- https://brand.linkedin.com/content/brand/global/en_us/index/visual-identity/logo -->
-                    <div>
-                        <!-- <img src="./images/logos/LinkedIn/Blue/1x/In-Blue-34-TM.png" alt="LinkedIn logo"/> -->
-                        <img 
-                            srcset="./images/logos/LinkedIn/White/1x/In-White-34-TM.png,
-                                    ./images/logos/LinkedIn/White/1x/In-White-48-TM.png 1.4x, 
-                                    ./images/logos/LinkedIn/White/1x/In-White-72-TM.png 2.1x"
-                            src="./images/logos/LinkedIn/White/1x/In-White-34-TM.png"
-                            alt="LinkedIn logo"/>
-                    </div>
-                    <h2>let's connect!</h2>
-                </a> 
-            </li>
-        </ul>
-    </footer>
 <html>

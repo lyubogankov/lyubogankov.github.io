@@ -1,3 +1,8 @@
+/* overriding header-footer-socials.css */
+.header-footer-socials {
+    display: flex !important;
+}
+
 /* explanation */
 section#businesscard-explanation {
     margin-left: 3rem;
@@ -5,9 +10,15 @@ section#businesscard-explanation {
 section#businesscard-explanation h1 {
     font-size: 2rem;
     font-weight: 400;
+    margin: 0;
+    margin-top: 2rem;
 }
 section#businesscard-explanation h2 {
     font-weight: 400;
+    margin: 0;
+}
+section#businesscard-explanation pre {
+    margin-top: 0;
 }
 
 /* grouping container for play button and "terminal"*/
@@ -121,9 +132,15 @@ code {
         margin-left: 2rem;
     }
     section#businesscard-explanation h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     section#businesscard-explanation h2 {
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    section#businesscard-explanation {
+        margin-left: 0;
     }
 }
