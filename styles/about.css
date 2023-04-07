@@ -1,0 +1,15 @@
+@import 'styles.css';
+
+/* overriding header-footer-socials.css */
+.header-footer-socials {
+    display: flex !important;
+}
+
+main {
+    display: block;
+    width: 40%;
+    min-width: 400px;
+    max-width: 550px;
+    margin: 2rem auto;
+    /* text-align: justify; */
+}

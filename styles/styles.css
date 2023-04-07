@@ -1,5 +1,6 @@
 /* This file serves to unify the other layout files and import them in the correct order!*/
 @import 'layout.css';
+@import 'theme-general.css';
 @import 'theme-dark.css';
 @import 'theme-light.css';
 @import 'header.css';

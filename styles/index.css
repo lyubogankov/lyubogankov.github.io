@@ -1,3 +1,10 @@
+@import 'styles.css';
+
+/* overriding theme (having non-header/footer links underlined) */
+main a {
+    text-decoration: none;
+}
+
 section#about-me {
     width: 80%;
     max-width: 1200px;
