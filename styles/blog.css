@@ -1,0 +1,11 @@
+@import 'styles.css';
+
+/* overriding header-footer-socials.css */
+.header-footer-socials {
+    display: flex !important;
+}
+
+main {
+    display: block;
+    margin: 2rem auto;
+}
