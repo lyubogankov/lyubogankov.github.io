@@ -1,3 +1,17 @@
+footer p {
+    font-size: 0.75rem;
+    font-weight: 100;
+    color: rgb(150, 150, 150);
+    text-align: center;
+}
+@media screen and (max-width: 700px) {
+    footer p {
+        font-size: 0.5rem;
+    }
+}
+
+/* header-footer-socials */
+
 footer ul#connect {
     list-style: none;
     display: flex;
