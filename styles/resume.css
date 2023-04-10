@@ -1,1 +1,35 @@
 @import 'styles.css';
+
+/* overriding header-footer-socials.css */
+.header-footer-socials {
+    display: flex !important;
+}
+
+main {
+    display: block;
+    margin: 2rem auto;
+}
+main p {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    main p {
+        font-size: 1rem;
+    }
+}
+
+/* computer monitor, landscape */
+#embedded-resume {
+    width: 50vw;
+    height: 60vw;
+    border: none;
+}
+/* computer monitor, portrait */
+@media (max-aspect-ratio: 1/1) {
+    #embedded-resume {
+        width: 80vw;
+        height: 103vw;
+    }
+}
