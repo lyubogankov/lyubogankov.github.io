@@ -1,0 +1,12 @@
+@import 'styles.css';
+
+/* overriding header-footer-socials.css */
+.header-footer-socials {
+    display: flex !important;
+}
+
+#embedded-slides {
+    width: 60vw;
+    height: 36vw;
+    border: none;
+}
