@@ -9,6 +9,16 @@ window.addEventListener('load', function() { // NOT `DOMContentLoaded`
     let oneline = document.getElementById('raw-text-singlestring');
     let oneline_take2 = document.getElementById('raw-text-singlestring-2');
 
+    for (var i=0; i < textarea.textContent.length; i++) {
+        let char = textarea.textContent.charAt(i);
+        if (char == '\n')
+            console.log("newline");
+        else if (char == " ")
+            console.log("space");
+        else
+            console.log(char);
+    }
+
     let onelinestring = JSON.stringify(textarea.textContent).replaceAll("\"", "");;
 
     oneline.textContent = onelinestring;
