@@ -8,6 +8,8 @@
     </head>
     <body class="theme-dark">
 
+        Testing out a code block: <code>variable</code>
+
         <h1>Interactive Encoding</h1>
 
         <!-- Step 1: raw text -->
@@ -20,16 +22,23 @@
 ) __ (  )(   \_/ 
 \_)(_/ (__)  (_) </textarea>
 
+        <h2>Initial Attempt</h2>
         <!-- Step 2: raw text as a single string -->
-        <h2>Raw text -> single string (showing escape chars)</h2>
+        <h3>Raw text -> single string (showing escape chars)</h3>
         <div id="raw-text-singlestring"></div> "\n" and "\\" are special - they each count as one character.  The leading backslash "escapes" the second symbol and indicates it's not a normal character.  "\n" means newline, and "\\" means backslash.
         
         <div id="raw-text-singlestring-2"></div> Hm, so it is possible to modity the string representation to remove escape characters but that might make it *more* confusing, not less.
         
         
         <!-- Step 3: raw text into run length encoding (with arrows between steps 2/3) -->
-        <h2>Single string -> run length character encoding</h2>
+        <h3>Single string -> run length character encoding</h3>
         <div id="run-lens"></div>
+
+
+        <h2>Take Two: Processing text directly from textarea</h2>
+
+        <div id="text-oneline-annotated"></div>
+        <div id="text-charlen-annotated"></div>
 
 
         <script src="encoding.js"></script>
@@ -47,4 +56,8 @@ the plan is to generate the diagram anew and show the three steps interactively 
 link save
 https://www.w3schools.com/js/js_htmldom_nodes.asp
 https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors | https://stackoverflow.com/questions/8903313/using-regular-expression-in-css (can make a rule with "regex")
+https://stackoverflow.com/questions/10510191/valid-to-use-a-anchor-tag-without-href-attribute
+
+    I'm thinking every element I want to be hoverable OR clickable needs to be an anchor. 
+    I don't like the idea of having them be "buttons".
 -->
