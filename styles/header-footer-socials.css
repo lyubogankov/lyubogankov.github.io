@@ -12,7 +12,7 @@ li#github-header a span div:hover {
     background-color: white;
 }
 
-li#linkedin-header div {
+li#linkedin-header a div {
     width: 34px;
     height: 34px;
     overflow: visible;
@@ -50,7 +50,7 @@ img.logo-github {
         width: 30px;
         height: 30px;
     }
-    li#linkedin-header div {
+    li#linkedin-header a div {
         width: 27.5px;
         height: 27.8px;
     }
