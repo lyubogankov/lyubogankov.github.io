@@ -53,37 +53,45 @@ window.addEventListener('load', function() { // NOT `DOMContentLoaded`
     let charlen = document.getElementById("text-charlen-annotated");
 
     let lastChar = "";
-    let count = 0;
+    let count = 1;
     let tokennum = 0; // for assigning classes
     for (var i=0; i < textarea.textContent.length; i++) {
         let char = textarea.textContent.charAt(i);
-        
+
         // if it's a repeat, keep counting
         if (char == lastChar) {
             count++;
             continue;
         }
+
         // otherwise, log to the two representations
 
         // oneline: push `count` # of `char`, each in a code block
+        for (var c=0; c < count; c++) {
+            oneline.appendChild(document.createElement("span"));
+            oneline.lastElementChild.innerHTML = `(<code>${char}</code>, 1)`;
+            oneline.lastElementChild.classList.add(`token${tokennum}`);
+        }
+
         // charlen: push one (char (w/in code block), count)
         const span_charlen = document.createElement("span");
         span_charlen.innerHTML = `(<code>${char}</code>, ${count})`;
+        span_charlen.classList.add(`token${tokennum}`);
         charlen.appendChild(span_charlen);
         // *** wrap both within a span that shares the same class
 
         // reset
         lastChar = char;
-        count = 0;
+        count = 1;
         tokennum++;
 
         
-        if (char == '\n')
-            console.log("newline");
-        else if (char == " ")
-            console.log("space");
-        else
-            console.log(char);
+        // if (char == '\n')
+        //     console.log("newline");
+        // else if (char == " ")
+        //     console.log("space");
+        // else
+        //     console.log(char);
     }
 
 });
