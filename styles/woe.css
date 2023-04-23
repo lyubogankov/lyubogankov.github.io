@@ -16,3 +16,8 @@ main {
     height: 36vw;
     border: none;
 }
+
+#video-warning {
+    font-style: italic;
+    font-size: 1em;
+}
