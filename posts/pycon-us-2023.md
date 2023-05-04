@@ -13,21 +13,73 @@ Additionally, based on advice from Al's guide, I decided to design business card
 
 ## At the conference
 
-.
+- thursday
+    - badge pick-up
+    - check-in volunteering
+    - capital one sponsor session
+    - newcomer orientation
+    - opening reception in expo hall
+
+- friday
+    - check-in volunteering
+    - breakfast
+    - conference kickoff, first keynote
+    - pyscript talk
+    - lunch
+    - expo hall
+    - capital one event
+    - aws pyparty
+
+- saturday
+    - breakfast
+    - *spent the morning with Tianna, re: keys after her 10k*
+    - submitted lightning talk (didn't get accepted for sat evening)
+    - lunch
+    - submitted lightning talk (accepted for sun morning as backup)
+
+- sunday
+    - lightning talk!
+    - breakfast
+    - job fair
+    - al sweigart talk on code tools
+    - psf update, guido van rossum talk, conf ending
+    - open-source sprinting workshop (got material link then left)
+
+- monday
+    - looking at open source projects -- beeware toga / briefcase
+    - lunch
+    - got a seat in the beeware room, but didn't get very far (odd issue with tests)
+
+also, plenty of time spent at the conference center in a quiet corner on my laptop, or walking around for steps outside
 
 
 ## Takeaways
 
-.
+What went well
+- volunteering
+- meals
+- lightning talk
+    - prepping slides ahead of time, putting link to slides on the sign-up sheet
+- writing down names/details about conversations
+
+What I'll do differently next time
+- hand out more business cards
+- different approach to badge info (no GH/LI, put last name on there, put something interesting in last two lines -- quote?)
+- potentially, try to find accomodations closer to the conference center (thankfully, didn't get rained on, but it was a long walk)
+- expo hall / "reception"
+    - find out what each company's business model is / why they are at the conference
+    - the opening reception had food, but next time I won't feel obligated to stay for the whole two hours
 
 
 ## SLC recommendations
 
-I reserved a full day after the conference activities to explore SLC before heading home, as I'd never visited before!  Here are two activities I really enjoyed:
+I reserved a full day after the conference activities to explore SLC before heading home, as I'd never visited before!  Between the full day and other pockets of time, I enjoyed:
 
 - [Museum of Natural History of Utah](https://nhmu.utah.edu/) -- Luis suggested visiting.  This was my first time seeing full-sized dinosaur skeletons in real life!
 
 - Hiking -- SLC is *directly* adjacent to the Rocky Mountains and the scenery is quite beautiful.  I hiked the to the [Living Room Lookout](https://www.alltrails.com/trail/us/utah/the-living-room-lookout-trail) with my SO.  She went on several hikes during the trip, and her favorite was []().
+
+- [Clark Planetarium](https://slco.org/clark-planetarium/) -- 
 
 Food highlights:
 
