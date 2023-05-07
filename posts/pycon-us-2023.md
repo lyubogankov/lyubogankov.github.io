@@ -11,65 +11,33 @@ At Luis' suggestion and with his encouragement, I prepared a 5-minute lightning 
 Additionally, based on advice from Al's guide, I decided to design business cards, which led to me also making a personal website.  The upcoming conference proved to be an excellent catalyst - I've always thought having a personal website was a cool idea but was previously stymied by a lack of web development skills.  I learned some basics from [Mozilla Developer Network's guides](https://developer.mozilla.org/en-US/docs/Learn) and [FreeCodeCamp's courses](https://www.freecodecamp.org/), and I'm pleased with the results!
 
 
-## At the conference & Takeaways
-
-The full breadth of PyCon was from Wednesday April 19th to Thursday April 27th, with the majority of activities occuring Friday-Sunday.  I chose to start on **Thursday** - I picked up my badge, explored the conference center (the Salt Palace is *huge*), and attended Capital One's sponsor talk on serverless Python application best-practices.  I also listened to the Newcomer Orientation, and was pleasantly surprised - they encouraged meeting people over talk attendance.  It's one thing to read advice online and another to hear in a room of hundreds of newcomers.  Trey Hunner was even one of the folks on stage!  After the Orientation was the Opening Reception in the Expo hall, which turned out to be the first opportunity to mingle with companies at their booths.
-
-On Thursday afternoon and **Friday** morning, I spent time helping out at the check-in area.  PyCon's volunteer communications promoted check-in as the best position for newcomers.  This activity turned out to be one of my favorite parts of the conference - it was easy for me to strike up a conversation because I automatically had two things in common with everyone else (Python and being at the check-in desk) and talking filled the time when nobody needed to register!  Friday morning was especially busy, since it was the first full conference day.
-
-
 ## At the conference
 
-The online how-to-PyCon guides I read all cautioned against filling up my time solely with conference talks, as they are all recorded and freely available later.  Instead, they advocated for having meeting other conference-goers!  To that end, I picked 3 talks that sounded especially interesting and left the remainder of my time unbooked.  I was pleasantly surprised by the fact that this ethos was reiterated at the conference itself, during the Newcomer Orientation on Thursday afternoon.  Trey Hunner was even one of the folks on stage!  A fellow newcomer I later met put it well - "they set a good tone" in focusing attention on the opportunity to meet people.
+The full breadth of PyCon was from Wednesday April 19th to Thursday April 27th, with the majority of activities occurring Friday-Sunday.  
 
+I chose to start on **Thursday** - I picked up my badge, explored the conference center (the Salt Palace is *huge*), and attended Capital One's sponsor talk on serverless Python application best-practices.  I also listened to the Newcomer Orientation, and was pleasantly surprised - they encouraged meeting people over talk attendance.  It's one thing to read advice online and another to hear in a room of hundreds of newcomers.  Trey Hunner was even one of the folks on stage!  After the Orientation was the Opening Reception in the Expo hall, which turned out to be the first opportunity to mingle with companies at their booths.
 
+On Thursday afternoon and Friday morning, I spent time helping out at the check-in area.  This activity turned out to be one of my favorite parts of the conference - it was easy for me to strike up conversations because I automatically had two things in common with everyone else (Python and being at the check-in desk) and talking filled the time when nobody needed to register!  **Friday** morning was especially busy, since it was the first full conference day.
 
-On Thursday I attended Capital One's sponsor talk on Serverless Python Applications, showcasing how their company builds and manages serverless applications.  It stood out to me from the other sponsor talks because they don't sell products or services to developers, and I was curious about their motivation.  Capital One had a large presence at the conference: their large booth was close to the main expo hall entrance and they hosted an offsite event on Friday evening.  My guess is that their goal was to showcase their company as being a technically savvy, interesting place to work with the aim of recruiting current and future talent (I learned that they employ a large number of software developers).
+I learned about PyScript shortly before the conference (from [Peter Wang's PyCon US 2022 keynote](https://www.youtube.com/watch?v=qKfkCY7cmBQ)) and was curious to learn more about it!  One of the folks I met at the check-in desk introduced me to a PyScript contributor, and it was interesting chatting with him about his involvement with the project.  On Friday afternoon I attended [*Build Yourself a PyScript*](https://pyscript.net/), a talk that gave a high-level overview of how PyScript works (tl;dr Javascript + WebAssembly).
 
-I signed up to help out at the check-in desk on Thursday afternoon and Friday morning.  This volunteer activity was emphasized as being good for first-timers because it's an opportunity 
+Friday evening was spent at two company-sponsored off-site events: Capital One hosted a fancy charcuterie-and-mingling event at the [McCune Mansion](https://mccunemansion.com/), and AWS + Superblocks threw a "PyParty" with a dinner buffet and open bar at the three-story [Squatters Pub Brewery](https://www.saltlakebrewingco.com/squatters).  I met interesting people at both events, so I'm glad I went!  The PyParty especially provided an opportunity for longer conversations than I had at most conference breakfasts/lunches.
 
+**Saturday** was a lighter conference day for me, but as with Friday and Sunday I made it a priority to attend the conference breakfasts and lunches.  These were another of my favorite conference activities, as the hall was full of large (10-person?) circular tables each with a different mix of people.  The most difficult part was always choosing a table - I usually spent a minute or more walking around to survey the options.  I considered how many people were at each table and tried to gauge whether the conversation was already flowing and how much longer they might spend at the table.  After picking where to sit, though, I was always made to feel welcome and had fun learning about the folks at the table!
 
-- friday
-    - check-in volunteering
-    - breakfast
-    - conference kickoff, first keynote
-    - pyscript talk
-    - lunch
-    - expo hall
-    - capital one event
-    - aws pyparty
+I submitted my lightning talk in the hopes of presenting at the Saturday PM session, but didn't make it.  In the afternoon, I tried again, signing up for the last session, Sunday AM.  This time, I included a link to my slides on the submission board to show that I was prepared.  I don't know whether the volunteer(s) picking the talks looked at my slides, but I *was* selected as a backup for the Sunday AM session!
 
-- saturday
-    - breakfast
-    - *spent the morning with Tianna, re: keys after her 10k*
-    - submitted lightning talk (didn't get accepted for sat evening)
-    - lunch
-    - submitted lightning talk (accepted for sun morning as backup)
+Waking up on **Sunday** morning was tough, as I needed to wake up early to be at the conference center by 7:30am MDT (6:30am PDT, my home time zone) to keep my lightning talk (backup) slot.  It was a ~15-20 minute walk from my AirBnB to the conference center, so I got up around 6-6:15am MDT.  I was the last backup speaker, but I did get a chance to give my talk!!  I'm very pleased with how it went - the cutoff is 5 minutes, and I clocked in just over 4 minutes (the fruits of hours of practice).  Speaking in front of such a large audience was not as daunting as I'd imagined - the practice runs helped, as did the blinding lights preventing me from seeing most of the room!  Right after the talk I got breakfast and treated myself to sweets at Eva's bakery, my own private version of Mariatta's #icecreamselfie.
 
-- sunday
-    - lightning talk!
-    - breakfast
-    - job fair
-    - al sweigart talk on code tools
-    - psf update, guido van rossum talk, conf ending
-    - open-source sprinting workshop (got material link then left)
+In the afternoon I attended Al Sweigart's talk on code tooling in 2023, and I intend to try out Ruff (very fast Rust-based Python linter).  I attended Guido van Rossum's keynote, where he reflected on the history of the PSF and PyCon (this was the 20th!), and watched the conference closing.  Finally, I swung by the intro to open source sprinting session as I was interested in participating in Monday's sprints - I snagged the [workshop material](https://github.com/chalmerlowe/intro_to_sprinting) and headed home for dinner, as I was pleased that I knew some of the material (git / GitHub) and was very hungry!
 
-- monday
-    - looking at open source projects -- beeware toga / briefcase
-    - lunch
-    - got a seat in the beeware room, but didn't get very far (odd issue with tests)
-
-also, plenty of time spent at the conference center in a quiet corner on my laptop, or walking around for steps outside
-
+My last conference day was **Monday**, the first of four open source sprint days.
 
 ## Takeaways
 
-What went well
-- volunteering
-- meals
-- lightning talk
-    - prepping slides ahead of time, putting link to slides on the sign-up sheet
-- writing down names/details about conversations
+*talk about open spaces
+*talk about how I spent a fair amount of time walking around and chilling in a corner on my laptop
+*talk about how I wrote down convo names/details
 
 What I'll do differently next time
 - hand out more business cards
@@ -86,7 +54,7 @@ I reserved a full day after the conference activities to explore SLC before head
 
 - [Museum of Natural History of Utah](https://nhmu.utah.edu/) -- Luis suggested visiting.  This was my first time seeing full-sized dinosaur skeletons in real life!
 
-- Hiking -- SLC is *directly* adjacent to the Rocky Mountains and the scenery is quite beautiful.  I hiked the to the [Living Room Lookout](https://www.alltrails.com/trail/us/utah/the-living-room-lookout-trail) with my SO.  She went on several hikes during the trip, and her favorite was []().
+- Hiking -- SLC is *directly* adjacent to the Rocky Mountains and the scenery is quite beautiful.  I hiked the to the [Living Room Lookout](https://www.alltrails.com/trail/us/utah/the-living-room-lookout-trail) with my SO.
 
 - [Clark Planetarium](https://slco.org/clark-planetarium/) -- Free science museum with many interactive displays.  My favorite part was getting to touch a real meteorite.
 
