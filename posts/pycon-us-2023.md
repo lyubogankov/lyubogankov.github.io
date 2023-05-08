@@ -75,6 +75,6 @@ Food highlights:
 
 3. [Eva's Bakery](https://www.evasbakeryslc.com/) -- very cute bakery and cafe in downtown SLC.  I'm a sucker for bakeries, and ordered their Kouign Amann and Monkey Bread to recharge after my lightning talk.  Both were scrumptious!
 
-4. [Kahve Cafe](https://www.kahvecafeslc.com/) -- Turkish coffee and Middle Eastern / Mediterranean treats are a potent combo!  I had a small cup of Turkish coffee, a savory Bulgarian-feta-and-parsely *borek* and a ramekin full of *keşkül* (Turkish milk pudding with almonds) all of which I thoroughly enjoyed.
+4. [Kahve Cafe](https://www.kahvecafeslc.com/) -- Turkish coffee and Middle Eastern / Mediterranean treats are a potent combo!  I had a small cup of Turkish coffee, a savory Bulgarian feta and parsley *borek* and a ramekin full of *keşkül* (Turkish milk pudding with almonds) all of which I thoroughly enjoyed.
 
 5. (*Honorable mention*) [Street Tacos](https://streettacosut.com/) -- Luis mentioned he ate *chapulines* (toasted/fried grasshoppers) here - unfortunately, it's a seasonal item and was not available.  I did eat a *nopal* taco (sautéed cactus leaf), another item I've never seen anywhere else.  Unique menu, if you're here in the summer the *chapulines* should be available!
